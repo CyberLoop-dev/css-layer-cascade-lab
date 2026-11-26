@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CSS Layer Cascade Lab</title><link rel="stylesheet" href="/styles.css"></head>
+<body><main class="shell">
+<header><p class="eyebrow">CSS CASCADE STUDY</p><h1>Layer Cascade Lab</h1><p>Reorder named layers and watch the winning declaration change.</p></header>
+<section class="controls"><button id="next-order" type="button">Change layer order</button><button id="reset-order" type="button" class="secondary">Reset order</button></section>
+<section class="layout">
+<article class="preview-panel"><h2>Rendered preview</h2><div class="demo-card" id="demo-card"><strong>Same selector</strong><span>Different cascade layer</span><small>The browser computes the final style.</small></div></article>
+<article class="details"><h2>Layer order</h2><code id="order-label"></code><h2>Computed style</h2><dl><dt>Background</dt><dd id="background"></dd><dt>Text color</dt><dd id="color"></dd><dt>Border color</dt><dd id="border"></dd></dl></article>
+</section>
+<p class="note">Across different cascade layers, layer precedence is resolved before selector specificity. This lab keeps the demo selector identical in each layer.</p>
+</main><script src="/app.js"></script></body></html>
